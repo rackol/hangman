@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="hangman.js"></script>
+    <link rel="stylesheet" href="hangman.css">
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#play").click(function(){
+                $("#div1").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+<br>
+<h1>
+    Hangman!
+</h1>
+<h2>
+    <div id="div1">
+        <span>Choose a Category:</span>
+        <br>
+        <select id="category">
+            <option value="0">Select Category</option>
+            <option value="1">Most Popular Names</option>
+            <option value="2">Colors</option>
+            <option value="3">Languages</option>
+            <option value="4">US Capitals</option>
+            <option value="5">World Capitals</option>
+            <option value="6">Animals</option>
+            <option value="7">Instruments</option>
+            <option value="8">Sports</option>
+            <option value="9">Fruit</option>
+            <option value="10">Disney</option>
+        </select>
+        <br><br>
+        <button id="play" onclick="play()" class="w3-button w3-hover-blue w3-round-large w3-border w3-border-black">Play!</button>
+    </div>
+    <br>
+    <div id="subject"></div>
+</h2>
+<h3>
+    <br><br>
+    <div id="answer"></div>
+    <div id="left"></div>
+    <div id="wrong"></div>
+
+</h3>
+<br><br>
+<h4>
+    <div id="box"></div>
+    <br>
+    <div id="btn"></div>
+    <br>
+    <img id="images"></img>
+    <br><br>
+    <div id="verdict"></div>
+    <br>
+    <div id="restart"></div>
+    <br>
+    <div id= "error"></div>
+
+
+</h4>
+</body>
+</html>
